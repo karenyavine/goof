@@ -1,0 +1,25 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - tap > tap-mocha-reporter > debug:
+        patched: '2021-03-02T15:38:46.941Z'
+  SNYK-JS-LODASH-567746:
+    - mongoose > async > lodash:
+        patched: '2021-03-02T15:38:46.941Z'
+  'npm:minimatch:20160620':
+    - tap > nyc > glob > minimatch:
+        patched: '2021-03-02T15:38:46.941Z'
+    - tap > nyc > rimraf > glob > minimatch:
+        patched: '2021-03-02T15:38:46.941Z'
+    - tap > nyc > spawn-wrap > rimraf > glob > minimatch:
+        patched: '2021-03-02T15:38:46.941Z'
+    - tap > nyc > istanbul > fileset > minimatch:
+        patched: '2021-03-02T15:38:46.941Z'
+    - tap > nyc > istanbul > fileset > glob > minimatch:
+        patched: '2021-03-02T15:38:46.941Z'
+  'npm:ms:20170412':
+    - tap > tap-mocha-reporter > debug > ms:
+        patched: '2021-03-02T15:38:46.941Z'
